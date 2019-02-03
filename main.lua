@@ -56,8 +56,8 @@ function love.update(dt)
       if playing then
         coins[k].update(dt)
       end
-      timetext = love.graphics.newText(font, math.ceil(actualtime))
     end
+    timetext = love.graphics.newText(font, math.ceil(actualtime))
     actualtime = actualtime - dt
     if actualtime < 0 then
       playing = false
